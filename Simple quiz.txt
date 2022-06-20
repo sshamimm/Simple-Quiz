@@ -1,0 +1,43 @@
+
+print("Welcome to my game")
+
+playing = input("Want to play?: ").lower()
+print(playing)
+
+if playing.lower() != "yes":
+    quit()
+
+print("Let's play :) ")
+score = 0
+
+answer = input("Who created python?: ").lower()
+if answer == "guido van rossum":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("Which year was python created?: ").lower()
+if answer == "1991":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("Which comedy group python tribute to?: ").lower()
+if answer == "monty python":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("Is python a good language?: ").lower()
+if answer == "yes":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+
+print("You got " + str(score) + " questions corrcet!")
+print("You got "+str(score / 4 * 100)+"%")
